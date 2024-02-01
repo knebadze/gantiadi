@@ -5,6 +5,7 @@ import HeaderVue from "./components/inc/HeaderInc.vue";
 import DarkButton from '@/components/inc/DarkButton.vue';
 import GoTop from "./components/inc/GoTop.vue";
 import FooterInc from "./components/inc/FooterInc.vue";
+import NewslatterArea from './components/inc/NewsletterArea.vue'
 
 </script>
 
@@ -20,9 +21,15 @@ import FooterInc from "./components/inc/FooterInc.vue";
         <!-- </component> -->
       </transition>
     </Router-view>
+    
+    <!-- Start Newsletter Area -->
+      <NewslatterArea />
+    <!-- End Newsletter Area -->
+
     <!-- Start Footer Area -->
       <FooterInc />
     <!-- End Footer Area -->
+
       <!-- Start Go Top Area -->
         <GoTop />
       <!-- End Go Top Area -->

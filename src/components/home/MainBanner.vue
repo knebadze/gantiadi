@@ -8,15 +8,15 @@
                             <div class="col-lg-6">
                                 <div class="main-banner-content">
                                     <span>Play, Learn and Grow</span>
-                                    <h1>We are a Childcare Professional</h1>
+                                    <h1>შესაბამის ტექსტი ოლიმპიადაზე</h1>
                                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis.</p>
 
                                     <div class="banner-btn">
                                         <a href="#" class="default-btn">
-                                            Learn More
+                                            ოლიმპიადის ნახვა
                                         </a>
                                         <a href="#" class="optional-btn">
-                                            Find Out More
+                                            განრიგის ნახვა
                                         </a>
                                     </div>
                                 </div>

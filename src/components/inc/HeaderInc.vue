@@ -26,6 +26,15 @@
     };
 </script>
 <template>
+    <div>
+        <!-- <div class="copyright-area">
+            <div class="container">
+                <div class="">
+                    <span class="text-white">599507612</span>
+                </div>
+            </div>
+        </div> -->
+    
    <!-- Start Navbar Area -->
         <div class="navbar-area " :class="{ 'is-sticky': isSticky }">
             <div class="main-responsive-nav">
@@ -57,113 +66,47 @@
                                     </router-link>
                                 </li>
                                 <li class="nav-item">
-                                    <router-link to="/" class="nav-link" :class="{'active': isRouteActive('/schedule')}">
+                                    <router-link to="/events" class="nav-link" :class="{'active': isRouteActive('/events')}">
+                                        ოლიმპიადები
+                                    </router-link>
+                                </li>
+                                <li class="nav-item">
+                                    <router-link to="/schedule" class="nav-link" :class="{'active': isRouteActive('/schedule')}">
                                         განრიგი
                                     </router-link>
                                 </li>
                                 
-
-                                <!-- <li class="nav-item" :class="{'active': isRouteActive('/about')}">
-                                    <router-link to="/about" class="nav-link">
-                                        Pages 
+                                <li class="nav-item">
+                                    <router-link to="/rules" class="nav-link" :class="{'active': isRouteActive('/rules')}">
+                                        წესები
+                                    </router-link>
+                                </li>
+                                <li class="nav-item" :class="{'active': isRouteActive('/score')}">
+                                    <router-link to="/score" class="nav-link">
+                                        შედეგები 
                                         <i class='bx bx-chevron-down'></i>
                                     </router-link>
 
                                     <ul class="dropdown-menu">
                                         <li class="nav-item">
-                                            <a href="about.html" class="nav-link">
-                                                About
-                                            </a>
+                                            <router-link to="/score" class="nav-link">
+                                                მათემატიკის ოლიმპიადა
+                                            </router-link>
                                         </li>
 
                                         <li class="nav-item">
                                             <a href="gallery.html" class="nav-link">
-                                                Gallery
-                                            </a>
-                                        </li>
-
-                                        <li class="nav-item">
-                                            <a href="pricing.html" class="nav-link">
-                                                Pricing
-                                            </a>
-                                        </li>
-
-                                        <li class="nav-item">
-                                            <a href="how-to-apply.html" class="nav-link">
-                                                How to Apply
-                                            </a>
-                                        </li>
-
-                                        <li class="nav-item">
-                                            <a href="programs.html" class="nav-link">
-                                                Programs
-                                            </a>
-                                        </li>
-
-                                        <li class="nav-item">
-                                            <a href="enroll.html" class="nav-link">
-                                                Enroll
-                                            </a>
-                                        </li>
-
-                                        <li class="nav-item">
-                                            <a href="timetable.html" class="nav-link">
-                                                Timetable
-                                            </a>
-                                        </li>
-
-                                        <li class="nav-item">
-                                            <a href="faq.html" class="nav-link">
-                                                FAQ
-                                            </a>
-                                        </li>
-
-                                        <li class="nav-item">
-                                            <a href="#" class="nav-link">
-                                                Account 
-                                                <i class='bx bx-chevron-down'></i>
-                                            </a>
-        
-                                            <ul class="dropdown-menu">
-                                                <li class="nav-item">
-                                                    <a href="login.html" class="nav-link">
-                                                        Login
-                                                    </a>
-                                                </li>
-        
-                                                <li class="nav-item">
-                                                    <a href="register.html" class="nav-link">
-                                                        Register
-                                                    </a>
-                                                </li>
-                                            </ul>
-                                        </li>
-                                    
-                                        <li class="nav-item">
-                                            <a href="error-404.html" class="nav-link">
-                                                Error Page
-                                            </a>
-                                        </li>
-                                
-                                        <li class="nav-item">
-                                            <a href="terms-of-service.html" class="nav-link">
-                                                Terms of Service
-                                            </a>
-                                        </li>
-
-                                        <li class="nav-item">
-                                            <a href="privacy-policy.html" class="nav-link">
-                                                Privacy Policy
-                                            </a>
-                                        </li>
-
-                                        <li class="nav-item">
-                                            <a href="coming-soon.html" class="nav-link">
-                                                Coming Soon
+                                                რეიტინგი
                                             </a>
                                         </li>
                                     </ul>
-                                </li> -->
+                                </li>
+
+                                <li class="nav-item">
+                                    <router-link to="/pay" class="nav-link" :class="{'active': isRouteActive('/pay')}">
+                                        გადახდა
+                                    </router-link>
+                                </li>
 
                                 <!-- <li class="nav-item">
                                     <a href="#" class="nav-link">
@@ -350,4 +293,5 @@
             </div> -->
         </div>
         <!-- End Navbar Area -->
+    </div>
 </template>
