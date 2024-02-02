@@ -74,10 +74,10 @@
                                     </router-link>
                                 </li>
                                 <li class="nav-item" :class="{'active': isRouteActive('/score')}">
-                                    <router-link to="/score" class="nav-link">
+                                    <a href="#" class="nav-link">
                                         შედეგები 
                                         <i class='bx bx-chevron-down'></i>
-                                    </router-link>
+                                    </a>
 
                                     <ul class="dropdown-menu">
                                         <li class="nav-item">
