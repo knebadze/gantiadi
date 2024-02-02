@@ -8,8 +8,9 @@
 <template>
   <main>
     <MainBanner />
-    <WhoWeAreVue />
     <ActiveEvent />
+    <WhoWeAreVue />
+    
     <FunFacts />
   </main>
 </template>

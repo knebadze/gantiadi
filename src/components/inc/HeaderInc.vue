@@ -63,11 +63,31 @@
                                     </router-link>
                                 </li>
                                 <li class="nav-item" :class="{'active': isRouteActive('/schedule')}">
+                                    <a href="#" class="nav-link">
+                                        განრიგი 
+                                        <i class='bx bx-chevron-down'></i>
+                                    </a>
+
+                                    <ul class="dropdown-menu">
+                                        <li class="nav-item">
+                                            <router-link to="/score" class="nav-link" :class="{'active': isRouteActive('/score')}">
+                                                ჩატარების ადგილები
+                                            </router-link>
+                                        </li>
+
+                                        <li class="nav-item" :class="{'active': isRouteActive('/schedule')}">
+                                            <router-link to="/schedule" class="nav-link" >
+                                                განრიგი
+                                            </router-link>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <!-- <li class="nav-item" :class="{'active': isRouteActive('/schedule')}">
                                     <router-link to="/schedule" class="nav-link" >
-                                        განრიგი
+                                        კალენდარი
                                     </router-link>
                                 </li>
-                                
+                                 -->
                                 <li class="nav-item" :class="{'active': isRouteActive('/rules')}">
                                     <router-link to="/rules" class="nav-link" >
                                         წესები
@@ -104,7 +124,7 @@
                             <div class="others-options d-flex align-items-center">
 
                                 <div class="option-item">
-                                    <a href="#" class="default-btn">დაგვიკავშირდით</a>
+                                    <router-link to="/events" class="default-btn">რეგისტრაცია</router-link>
                                 </div>
                             </div>
                         </div>
