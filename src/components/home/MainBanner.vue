@@ -12,12 +12,12 @@
                                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis.</p>
 
                                     <div class="banner-btn">
-                                        <a href="#" class="default-btn">
+                                        <router-link to="/events" class="default-btn">
                                             ოლიმპიადის ნახვა
-                                        </a>
-                                        <a href="#" class="optional-btn">
+                                        </router-link>
+                                        <router-link to="/schedule" class="optional-btn">
                                             განრიგის ნახვა
-                                        </a>
+                                        </router-link>
                                     </div>
                                 </div>
                             </div>

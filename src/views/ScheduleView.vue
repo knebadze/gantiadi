@@ -22,14 +22,16 @@
                                             <a href="#">მათემატიკის ოლიმპიადა</a>
                                         </h3>
                                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
-                                        <span>3-8 Months 8:00 AM - 11:00 PM</span>
+                                        <span>რეგისტრაციის თარიღი: </span>
+                                        <span class="d-block"> 3 თებერვლიდან - 8 მარტის ჩათვლით</span>
                                     </div>
                                 </div>
         
                                 <div class="col-md-3">
                                     <div class="event-date">
+                                        <span class="fw-700">ჩატარდება</span>
                                         <h4>20</h4>
-                                        <span>October</span>
+                                        <span>მარტი</span>
                                     </div>
                                 </div>
                             </div>
@@ -51,14 +53,16 @@
                                             <a href="#">გუნდური ოლიმპიადა</a>
                                         </h3>
                                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
-                                        <span>3-8 Months 8:00 AM - 11:00 PM</span>
+                                        <span>რეგისტრაციის თარიღი: </span>
+                                        <span class="d-block"> 3 თებერვლიდან - 8 მარტის ჩათვლით</span>
                                     </div>
                                 </div>
         
                                 <div class="col-md-3">
                                     <div class="event-date">
+                                        <span class="fw-700">ჩატარდება</span>
                                         <h4>12</h4>
-                                        <span>December</span>
+                                        <span>მარტი</span>
                                     </div>
                                 </div>
                             </div>
@@ -80,14 +84,16 @@
                                             <a href="#">ინგლისურის ოლიმპიადა</a>
                                         </h3>
                                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
-                                        <span>3-8 Months 8:00 AM - 11:00 PM</span>
+                                        <span>რეგისტრაციის თარიღი: </span>
+                                        <span class="d-block"> 3 თებერვლიდან - 8 მარტის ჩათვლით</span>
                                     </div>
                                 </div>
         
                                 <div class="col-md-3">
                                     <div class="event-date">
+                                        <span class="fw-700">ჩატარდება</span>
                                         <h4>29</h4>
-                                        <span>Agust</span>
+                                        <span>მარტი</span>
                                     </div>
                                 </div>
                             </div>
@@ -109,14 +115,16 @@
                                             <a href="#">ქართულის ოლიმპიადა</a>
                                         </h3>
                                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
-                                        <span>3-8 Months 8:00 AM - 11:00 PM</span>
+                                        <span>რეგისტრაციის თარიღი: </span>
+                                        <span class="d-block"> 3 თებერვლიდან - 8 მარტის ჩათვლით</span>
                                     </div>
                                 </div>
         
                                 <div class="col-md-3">
                                     <div class="event-date">
-                                        <h4>30</h4>
-                                        <span>November</span>
+                                        <span class="fw-700">ჩატარდება</span>
+                                        <h4>10</h4>
+                                        <span>მარტი</span>
                                     </div>
                                 </div>
                             </div>

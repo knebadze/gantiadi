@@ -22,17 +22,21 @@
                                 <p>Lorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
 
                                 <ul class="class-list">
-                                    <li>
-                                        <span>ასაკი:</span>
-                                        3-5 წელი
+                                    <li class="mb-2">
+                                        <span class='bx bx-time'></span>
+                                        8:00 - 10:00 
                                     </li>
-                                    <li>
-                                        <span>დრო:</span>
-                                        8-10 
+                                    <li class="mb-2">
+                                        <span class='bx bxs-hourglass-top'></span>
+                                        50 წუთი
                                     </li>
-                                    <li>
-                                        <span>ადგილი:</span>
-                                        25
+                                    <li class="mb-2">
+                                        <span class='bx bx-user'></span>
+                                        II, III, IV, V ; VI; VII კლასის მოსწავლეები
+                                    </li>
+                                    <li class="mb-2">
+                                        <span class='bx bx-gift'></span>
+                                        I, II და III ადგილოსნები დაჯილდოვდებიან ფასიანი საჩუქრებით
                                     </li>
                                 </ul>
 
@@ -59,17 +63,21 @@
                                 <p>Lorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
 
                                 <ul class="class-list">
-                                    <li>
-                                        <span>ასაკი:</span>
-                                        3-5 წელი
+                                    <li class="mb-2">
+                                        <span class='bx bx-time'></span>
+                                        8:00 - 10:00 
                                     </li>
-                                    <li>
-                                        <span>დრო:</span>
-                                        8-10
+                                    <li class="mb-2">
+                                        <span class='bx bxs-hourglass-top'></span>
+                                        50 წუთი
                                     </li>
-                                    <li>
-                                        <span>ადგილი:</span>
-                                        25
+                                    <li class="mb-2">
+                                        <span class='bx bx-user'></span>
+                                        II, III, IV, V ; VI; VII კლასის მოსწავლეები
+                                    </li>
+                                    <li class="mb-2">
+                                        <span class='bx bx-gift'></span>
+                                        I, II და III ადგილოსნები დაჯილდოვდებიან ფასიანი საჩუქრებით
                                     </li>
                                 </ul>
 
@@ -94,19 +102,22 @@
                                     <a href="#">ინგლისურის ოლიმპიადა</a>
                                 </h3>
                                 <p>Lorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-
                                 <ul class="class-list">
-                                    <li>
-                                        <span>ასაკი:</span>
-                                        3-5 წელი
+                                    <li class="mb-2">
+                                        <span class='bx bx-time'></span>
+                                        8:00 - 10:00 
                                     </li>
-                                    <li>
-                                        <span>დრო:</span>
-                                        8-10 
+                                    <li class="mb-2">
+                                        <span class='bx bxs-hourglass-top'></span>
+                                        50 წუთი
                                     </li>
-                                    <li>
-                                        <span>ადგილი:</span>
-                                        25
+                                    <li class="mb-2">
+                                        <span class='bx bx-user'></span>
+                                        II, III, IV, V ; VI; VII კლასის მოსწავლეები
+                                    </li>
+                                    <li class="mb-2">
+                                        <span class='bx bx-gift'></span>
+                                        I, II და III ადგილოსნები დაჯილდოვდებიან ფასიანი საჩუქრებით
                                     </li>
                                 </ul>
 

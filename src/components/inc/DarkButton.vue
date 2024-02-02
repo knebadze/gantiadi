@@ -10,7 +10,7 @@
     // Function to toggle between light and dark theme
     const toggleTheme = () => {
     isDarkMode.value = !isDarkMode.value;
-    setTheme(isDarkMode.value ? 'theme-dark' : 'theme-light');
+        setTheme(isDarkMode.value ? 'theme-dark' : 'theme-light');
     };
 
     // Reactive variable to track the current theme
@@ -18,7 +18,7 @@
 
     // Watch for changes in the isDarkMode variable and update the theme accordingly
     watch(isDarkMode, (newValue) => {
-    setTheme(newValue ? 'theme-dark' : 'theme-light');
+        setTheme(newValue ? 'theme-dark' : 'theme-light');
     });
 
     // Immediately invoked function to set the theme on initial load
@@ -37,6 +37,7 @@
         <label id="switch" class="switch">
             <input type="checkbox" @change="toggleTheme" id="slider">
             <span class="slider round"></span>
+            
         </label>
     </div>
 </template>

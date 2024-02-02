@@ -24,6 +24,19 @@
         const route = useRoute();
         return route.path === path;
     };
+
+    // hamburger
+    const navbar_nav = ref(false); 
+
+    const toggleNavbarNav = () =>{
+        navbar_nav.value = !navbar_nav.value
+    }
+
+    const navbar_link = ref(false); 
+
+    const toggleNavLink = () =>{
+        navbar_link.value = !navbar_link.value
+    }
 </script>
 <template>
     <div>
@@ -39,7 +52,73 @@
         <div class="navbar-area " :class="{ 'is-sticky': isSticky }">
             <div class="main-responsive-nav">
                 <div class="container">
-                    <div class="main-responsive-menu">
+                    <div class="main-responsive-menu mean-container">
+                        <div class="mean-bar">
+                            <a 
+                                href="#" 
+                                class="meanmenu-reveal " 
+                                style="right: 0px; left: auto; text-align: center; text-indent: 0px; font-size: 18px;" 
+                                @click="toggleNavbarNav"
+                            >
+                                <span v-show="!navbar_nav"><span><span></span></span></span>{{ navbar_nav ? 'X' :''  }}
+                            </a>
+                            <nav class="mean-nav" >
+                                <ul class="navbar-nav" v-show="navbar_nav">
+                                    <li class="nav-item " @click="event => {navbar_nav = false}">
+                                        <router-link to="/" class="nav-link" :class="{'active': isRouteActive('/')}">
+                                            მთავარი
+                                        </router-link>
+                                    </li>
+                                    <li class="nav-item " @click="event => {navbar_nav = false}">
+                                        <router-link to="/events" class="nav-link" :class="{'active': isRouteActive('/events')}">
+                                            ოლიმპიადები
+                                        </router-link>
+                                    </li>
+                                    <li class="nav-item " @click="event => {navbar_nav = false}">
+                                        <router-link to="/schedule" class="nav-link" :class="{'active': isRouteActive('/schedule')}">
+                                            განრიგი
+                                        </router-link>
+                                    </li>
+                                    <li class="nav-item " @click="event => {navbar_nav = false}">
+                                        <router-link to="/rules" class="nav-link" :class="{'active': isRouteActive('/rules')}">
+                                            წესები
+                                        </router-link>
+                                    </li>
+                                    
+
+                                    <li class="nav-item" @click="toggleNavLink">
+                                        <a href="#" class="nav-link" :class="{'active': isRouteActive('/score')}">
+                                            შედეგები 
+                                            <i class="bx bx-chevron-down"></i>
+                                        </a>
+                                        <ul class="dropdown-menu" style=" display: block;" v-show="navbar_link">
+                                            <li class="nav-item" @click="event => {navbar_nav = false}">
+                                                <router-link to="/score" class="nav-link" :class="{'active': isRouteActive('/score')}">
+                                                    ძებნა
+                                                </router-link>
+                                            </li>
+
+                                            <li class="nav-item" @click="event => {navbar_nav = false}">
+                                                <a href="blog-details.html" class="nav-link">
+                                                    რეიტინგი
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    <a class="mean-expand " href="#" style="font-size: 18px">{{ !navbar_link ?'+' : '-' }}</a></li>
+                                    <!-- class="mean-clicked"  - -->
+                                    <li class="nav-item " @click="event => {navbar_nav = false}">
+                                            <router-link to="/pay" class="nav-link" :class="{'active': isRouteActive('/pay')}">
+                                            გადახდა
+                                        </router-link>
+                                    </li>
+                                    <li class="nav-item mean-last" @click="event => {navbar_nav = false}">
+                                        <a href="contact.html" class="nav-link">
+                                            Contact
+                                        </a>
+                                    </li>
+                                </ul>
+                            </nav>
+                        </div>
                         <div class="logo">
                             <router-link to="/">
                                 <img src="@/assets/img/logo-color-3.png" class="black-logo" alt="image">
@@ -47,10 +126,32 @@
                             </router-link>
                         </div>
                     </div>
+                    <!-- <div class="main-responsive-menu d-flex justify-content-between">
+                        
+                        <div class="logo">
+                            <router-link to="/">
+                                <img src="@/assets/img/logo-color-3.png" class="black-logo" alt="image">
+                                <img src="@/assets/img/logo-color-3.png" class="white-logo" alt="image">
+                            </router-link>
+                        </div>
+                     
+                        <div class="mean-bar dropdown">
+                            <a  class="meanmenu-reveal dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                                <i class="bx bx-menu"></i>
+                            </a>
+                                <ul class="dropdown-menu" >
+                                    <li class=" d-flex justify-content-between">
+                                        <a href="#" class="dropdown-item">
+                                            Home 
+                                        </a>
+                                    </li>
+                                </ul>
+                        </div>
+                    </div> -->
                 </div>
             </div>
 
-            <div class="main-navbar">
+            <div class="main-navbar " >
                 <div class="container">
                     <nav class="navbar navbar-expand-md navbar-light" >
                         <router-link to="/" class="navbar-brand">
@@ -65,19 +166,19 @@
                                         მთავარი
                                     </router-link>
                                 </li>
-                                <li class="nav-item">
-                                    <router-link to="/events" class="nav-link" :class="{'active': isRouteActive('/events')}">
+                                <li class="nav-item" :class="{'active': isRouteActive('/events')}">
+                                    <router-link to="/events" class="nav-link" >
                                         ოლიმპიადები
                                     </router-link>
                                 </li>
-                                <li class="nav-item">
-                                    <router-link to="/schedule" class="nav-link" :class="{'active': isRouteActive('/schedule')}">
+                                <li class="nav-item" :class="{'active': isRouteActive('/schedule')}">
+                                    <router-link to="/schedule" class="nav-link" >
                                         განრიგი
                                     </router-link>
                                 </li>
                                 
-                                <li class="nav-item">
-                                    <router-link to="/rules" class="nav-link" :class="{'active': isRouteActive('/rules')}">
+                                <li class="nav-item" :class="{'active': isRouteActive('/rules')}">
+                                    <router-link to="/rules" class="nav-link" >
                                         წესები
                                     </router-link>
                                 </li>
@@ -89,8 +190,8 @@
 
                                     <ul class="dropdown-menu">
                                         <li class="nav-item">
-                                            <router-link to="/score" class="nav-link">
-                                                მათემატიკის ოლიმპიადა
+                                            <router-link to="/score" class="nav-link" :class="{'active': isRouteActive('/score')}">
+                                                ძებნა
                                             </router-link>
                                         </li>
 
@@ -102,196 +203,38 @@
                                     </ul>
                                 </li>
 
-                                <li class="nav-item">
-                                    <router-link to="/pay" class="nav-link" :class="{'active': isRouteActive('/pay')}">
+                                <li class="nav-item" :class="{'active': isRouteActive('/pay')}">
+                                    <router-link to="/pay" class="nav-link" >
                                         გადახდა
                                     </router-link>
                                 </li>
-
-                                <!-- <li class="nav-item">
-                                    <a href="#" class="nav-link">
-                                        Teacher 
-                                        <i class='bx bx-chevron-down'></i>
-                                    </a>
-
-                                    <ul class="dropdown-menu">
-                                        <li class="nav-item">
-                                            <a href="teacher.html" class="nav-link">
-                                                Teacher
-                                            </a>
-                                        </li>
-
-                                        <li class="nav-item">
-                                            <a href="teacher-details.html" class="nav-link">
-                                                Teacher Details
-                                            </a>
-                                        </li>
-                                    </ul>
-                                </li> -->
-
-                                <!-- <li class="nav-item">
-                                    <a href="#" class="nav-link">
-                                        Event 
-                                        <i class='bx bx-chevron-down'></i>
-                                    </a>
-
-                                    <ul class="dropdown-menu">
-                                        <li class="nav-item">
-                                            <a href="event.html" class="nav-link">
-                                                Event
-                                            </a>
-                                        </li>
-
-                                        <li class="nav-item">
-                                            <a href="event-details.html" class="nav-link">
-                                                Event Details
-                                            </a>
-                                        </li>
-                                    </ul>
-                                </li> -->
-
-                                <!-- <li class="nav-item">
-                                    <a href="#" class="nav-link">
-                                        Class 
-                                        <i class='bx bx-chevron-down'></i>
-                                    </a>
-
-                                    <ul class="dropdown-menu">
-                                        <li class="nav-item">
-                                            <a href="class.html" class="nav-link">
-                                                Class
-                                            </a>
-                                        </li>
-
-                                        <li class="nav-item">
-                                            <a href="class-details.html" class="nav-link">
-                                                Class Details
-                                            </a>
-                                        </li>
-                                    </ul>
-                                </li> -->
-
-                                <!-- <li class="nav-item">
-                                    <a href="#" class="nav-link">
-                                        Blog 
-                                        <i class='bx bx-chevron-down'></i>
-                                    </a>
-                                    <ul class="dropdown-menu">
-                                        <li class="nav-item">
-                                            <a href="blog.html" class="nav-link">
-                                                Blog
-                                            </a>
-                                        </li>
-
-                                        <li class="nav-item">
-                                            <a href="blog-details.html" class="nav-link">
-                                                Blog Details
-                                            </a>
-                                        </li>
-                                    </ul>
-                                </li> -->
-
-                                <!-- <li class="nav-item">
-                                    <a href="contact.html" class="nav-link">
-                                        Contact
-                                    </a>
-                                </li> -->
                             </ul>
 
                             <div class="others-options d-flex align-items-center">
-                                <div class="option-item">
-                                    <!-- <div class="dropdown language-switcher d-inline-block">
-                                        <button class="dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                            <span>Language <i class='bx bx-chevron-down'></i></span>
-                                        </button>
-    
-                                        <div class="dropdown-menu">
-                                            <a href="#" class="dropdown-item d-flex align-items-center">
-                                                <img src="@/assets/img/english.png" class="shadow-sm" alt="flag">
-                                                <span>English</span>
-                                            </a>
-                                            <a href="#" class="dropdown-item d-flex align-items-center">
-                                                <img src="@/assets/img/arab.png" class="shadow-sm" alt="flag">
-                                                <span>العربيّة</span>
-                                            </a>
-                                            <a href="#" class="dropdown-item d-flex align-items-center">
-                                                <img src="@/assets/img/germany.png" class="shadow-sm" alt="flag">
-                                                <span>Deutsch</span>
-                                            </a>
-                                            <a href="#" class="dropdown-item d-flex align-items-center">
-                                                <img src="@/assets/img/portugal.png" class="shadow-sm" alt="flag">
-                                                <span>Português</span>
-                                            </a>
-                                            <a href="#" class="dropdown-item d-flex align-items-center">
-                                                <img src="@/assets/img/china.png" class="shadow-sm" alt="flag">
-                                                <span>简体中文</span>
-                                            </a>
-                                        </div>
-                                    </div> -->
-                                </div>
 
                                 <div class="option-item">
-                                    <a href="#" class="default-btn">Contact Us</a>
+                                    <a href="#" class="default-btn">დაგვიკავშირდით</a>
                                 </div>
                             </div>
                         </div>
+                        
                     </nav>
-                </div>
-            </div>
-
-            <!-- <div class="others-option-for-responsive">
-                <div class="container">
-                    <div class="dot-menu">
-                        <div class="inner">
-                            <div class="circle circle-one"></div>
-                            <div class="circle circle-two"></div>
-                            <div class="circle circle-three"></div>
-                        </div>
-                    </div>
                     
-                    <div class="container">
-                        <div class="option-inner">
-                            <div class="others-options d-flex align-items-center">
-                                <div class="option-item">
-                                    <div class="dropdown language-switcher d-inline-block">
-                                        <button class="dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                            <span>Language <i class='bx bx-chevron-down'></i></span>
-                                        </button>
-    
-                                        <div class="dropdown-menu">
-                                            <a href="#" class="dropdown-item d-flex align-items-center">
-                                                <img src="@/assets/img/english.png" class="shadow-sm" alt="flag">
-                                                <span>English</span>
-                                            </a>
-                                            <a href="#" class="dropdown-item d-flex align-items-center">
-                                                <img src="@/assets/img/arab.png" class="shadow-sm" alt="flag">
-                                                <span>العربيّة</span>
-                                            </a>
-                                            <a href="#" class="dropdown-item d-flex align-items-center">
-                                                <img src="@/assets/img/germany.png" class="shadow-sm" alt="flag">
-                                                <span>Deutsch</span>
-                                            </a>
-                                            <a href="#" class="dropdown-item d-flex align-items-center">
-                                                <img src="@/assets/img/portugal.png" class="shadow-sm" alt="flag">
-                                                <span>Português</span>
-                                            </a>
-                                            <a href="#" class="dropdown-item d-flex align-items-center">
-                                                <img src="@/assets/img/china.png" class="shadow-sm" alt="flag">
-                                                <span>简体中文</span>
-                                            </a>
-                                        </div>
-                                    </div>
-                                </div>
-
-                                <div class="option-item">
-                                    <a href="#" class="default-btn">Contact Us</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
                 </div>
-            </div> -->
+                
+            </div>
+            
+            
         </div>
         <!-- End Navbar Area -->
     </div>
 </template>
+<style scoped>
+    .icon-hamburger{
+        right: 0px; 
+        left: auto; 
+        text-align: center; 
+        text-indent: 0px; 
+        font-size: 18px;
+    }
+</style>

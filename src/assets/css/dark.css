@@ -47,7 +47,7 @@ Default CSS
   transition: 0.4s;
   -webkit-box-shadow: 0 0px 15px #2020203d;
           box-shadow: 0 0px 15px #2020203d;
-  background: white url("../../../../FxzBYR9/night.png");
+  background: white url("../img/night.png");
   background-repeat: no-repeat;
   background-position: center;
 }
@@ -64,7 +64,7 @@ Default CSS
 .dark-version input:checked + .slider:before {
   -webkit-transform: translateX(24px);
   transform: translateX(24px);
-  background: white url("../../../../7JfqXxB/sunny.png");
+  background: white url("../img/sunny.png");
   background-repeat: no-repeat;
   background-position: center;
 }
