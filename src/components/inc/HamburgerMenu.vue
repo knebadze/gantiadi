@@ -14,10 +14,15 @@
         navbar_nav.value = !navbar_nav.value
     }
 
-    const navbar_link = ref(false); 
-
-    const toggleNavLink = () =>{
-        navbar_link.value = !navbar_link.value
+    const navbar_link_schedule = ref(false); 
+    const navbar_link_score = ref(false); 
+    const toggleNavLink = (item) =>{
+        if (item == 'schedule') {
+            navbar_link_schedule.value = !navbar_link_schedule.value
+        }else{
+            navbar_link_score.value = !navbar_link_score.value
+        }
+        
     }
 </script>
 <template>
@@ -45,24 +50,40 @@
                                     ოლიმპიადები
                                 </router-link>
                             </li>
-                            <li class="nav-item " @click="event => {navbar_nav = false}">
+                            <li class="nav-item" @click="toggleNavLink('schedule')">
+                                <a href="#" class="nav-link" :class="{'active': isRouteActive('/schedule') || isRouteActive('/place')}">
+                                    განრიგი 
+                                    <i class="bx bx-chevron-down"></i>
+                                </a>
+                                <ul class="dropdown-menu" style=" display: block;" v-show="navbar_link_schedule">
+                                    <li class="nav-item" @click="event => {navbar_nav = false}">
+                                        <router-link to="/place" class="nav-link" :class="{'active': isRouteActive('/place')}">
+                                            ჩატარების ადგილები
+                                        </router-link>
+                                    </li>
+
+                                    <li class="nav-item" @click="event => {navbar_nav = false}">
+                                        <router-link to="/schedule" class="nav-link" :class="{'active': isRouteActive('/schedule')}">
+                                            განრიგი
+                                        </router-link>
+                                    </li>
+                                </ul>
+                                <a class="mean-expand " href="#" style="font-size: 18px">{{ !navbar_link_schedule ?'+' : '-' }}</a>
+                            </li>
+                            <!-- <li class="nav-item " @click="event => {navbar_nav = false}">
                                 <router-link to="/schedule" class="nav-link" :class="{'active': isRouteActive('/schedule')}">
                                     განრიგი
                                 </router-link>
-                            </li>
-                            <li class="nav-item " @click="event => {navbar_nav = false}">
-                                <router-link to="/rules" class="nav-link" :class="{'active': isRouteActive('/rules')}">
-                                    წესები
-                                </router-link>
-                            </li>
+                            </li> -->
+                            
                             
 
-                            <li class="nav-item" @click="toggleNavLink">
-                                <a href="#" class="nav-link" :class="{'active': isRouteActive('/score')}">
+                            <li class="nav-item" @click="toggleNavLink('score')">
+                                <a href="#" class="nav-link" :class="{'active': isRouteActive('/score') || isRouteActive('/rating')}">
                                     შედეგები 
                                     <i class="bx bx-chevron-down"></i>
                                 </a>
-                                <ul class="dropdown-menu" style=" display: block;" v-show="navbar_link">
+                                <ul class="dropdown-menu" style=" display: block;" v-show="navbar_link_score">
                                     <li class="nav-item" @click="event => {navbar_nav = false}">
                                         <router-link to="/score" class="nav-link" :class="{'active': isRouteActive('/score')}">
                                             ძებნა
@@ -70,12 +91,13 @@
                                     </li>
 
                                     <li class="nav-item" @click="event => {navbar_nav = false}">
-                                        <a href="blog-details.html" class="nav-link">
+                                        <router-link to="/rating" class="nav-link" :class="{'active': isRouteActive('/rating')}">
                                             რეიტინგი
-                                        </a>
+                                        </router-link>
                                     </li>
                                 </ul>
-                            <a class="mean-expand " href="#" style="font-size: 18px">{{ !navbar_link ?'+' : '-' }}</a></li>
+                                <a class="mean-expand " href="#" style="font-size: 18px">{{ !navbar_link_score ?'+' : '-' }}</a>
+                            </li>
                             <!-- class="mean-clicked"  - -->
                             <li class="nav-item " @click="event => {navbar_nav = false}">
                                     <router-link to="/pay" class="nav-link" :class="{'active': isRouteActive('/pay')}">
@@ -83,10 +105,15 @@
                                 </router-link>
                             </li>
                             <li class="nav-item mean-last" @click="event => {navbar_nav = false}">
+                                <router-link to="/rules" class="nav-link" :class="{'active': isRouteActive('/rules')}">
+                                    წესები
+                                </router-link>
+                            </li>
+                            <!-- <li class="nav-item mean-last" @click="event => {navbar_nav = false}">
                                 <a href="contact.html" class="nav-link">
                                     Contact
                                 </a>
-                            </li>
+                            </li> -->
                         </ul>
                     </nav>
                 </div>

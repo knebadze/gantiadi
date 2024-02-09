@@ -9,8 +9,8 @@
             <div class="event-box-item" v-for="(item, index) in 2" :key="index">
                 <div class="row align-items-center">
                     <div class="col-md-4">
-                        <div class="event-image ">
-                            <a href="#"><img class="rounded-4" src="@/assets/img/class/class-2.jpg" alt="image"></a>
+                        <div class="my-event-image" >
+                            <a href="#"><img class="rounded-4" src="@/assets/img/event/math.jpg" alt="image" style=""></a>
                         </div>
                     </div>
 

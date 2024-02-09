@@ -16,9 +16,9 @@
                 {{ item.title }}
             </a>
 
-            <p class="accordion-content" :class="{ show: activeIndex === index }">
-                {{ item.content }}
-            </p>
+            <div class="accordion-content" :class="{ show: activeIndex === index }">
+                <span></span><p v-for="(item, index) in item.content" :key="index"> {{ `${index + 1}. ${item}` }}</p>
+            </div>
         </li>
 
     </ul>

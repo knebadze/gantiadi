@@ -8,9 +8,9 @@
                 <div class="row">
                     <div class="col-lg-4 col-md-6">
                         <div class="single-class">
-                            <div class="class-image">
+                            <div class="my-event-image">
                                 <a href="#">
-                                    <img src="@/assets/img/class/class-1.jpg" alt="image">
+                                    <img src="@/assets/img/event/team_2.jpg" alt="image" >
                                 </a>
                             </div>
 
@@ -49,9 +49,9 @@
 
                     <div class="col-lg-4 col-md-6">
                         <div class="single-class">
-                            <div class="class-image">
+                            <div class="my-event-image">
                                 <a href="#">
-                                    <img src="@/assets/img/class/class-2.jpg" alt="image">
+                                    <img src="@/assets/img/event/math.jpg" alt="image">
                                 </a>
                             </div>
 
@@ -90,9 +90,9 @@
 
                     <div class="col-lg-4 col-md-6">
                         <div class="single-class">
-                            <div class="class-image">
+                            <div class="my-event-image">
                                 <a href="#">
-                                    <img src="@/assets/img/class/class-3.jpg" alt="image">
+                                    <img src="@/assets/img/event/english.jpg" alt="image">
                                 </a>
                             </div>
 
@@ -136,3 +136,6 @@
         </section>
     </div>
 </template>
+<style scoped>
+    
+</style>

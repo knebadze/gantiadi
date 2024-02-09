@@ -62,7 +62,7 @@
                                         ოლიმპიადები
                                     </router-link>
                                 </li>
-                                <li class="nav-item" :class="{'active': isRouteActive('/schedule')}">
+                                <li class="nav-item" :class="{'active': isRouteActive('/schedule') || isRouteActive('/place')}">
                                     <a href="#" class="nav-link">
                                         განრიგი 
                                         <i class='bx bx-chevron-down'></i>
@@ -70,7 +70,7 @@
 
                                     <ul class="dropdown-menu">
                                         <li class="nav-item">
-                                            <router-link to="/score" class="nav-link" :class="{'active': isRouteActive('/score')}">
+                                            <router-link to="/place" class="nav-link" :class="{'active': isRouteActive('/place')}">
                                                 ჩატარების ადგილები
                                             </router-link>
                                         </li>
@@ -88,12 +88,8 @@
                                     </router-link>
                                 </li>
                                  -->
-                                <li class="nav-item" :class="{'active': isRouteActive('/rules')}">
-                                    <router-link to="/rules" class="nav-link" >
-                                        წესები
-                                    </router-link>
-                                </li>
-                                <li class="nav-item" :class="{'active': isRouteActive('/score')}">
+                                
+                                <li class="nav-item" :class="{'active': isRouteActive('/score') || isRouteActive('/rating')}">
                                     <a href="#" class="nav-link">
                                         შედეგები 
                                         <i class='bx bx-chevron-down'></i>
@@ -101,15 +97,15 @@
 
                                     <ul class="dropdown-menu">
                                         <li class="nav-item">
-                                            <router-link to="/score" class="nav-link" :class="{'active': isRouteActive('/score')}">
+                                            <router-link to="/score" class="nav-link" :class="{'active': isRouteActive('/score') }">
                                                 ძებნა
                                             </router-link>
                                         </li>
 
                                         <li class="nav-item">
-                                            <a href="gallery.html" class="nav-link">
+                                            <router-link to="/rating" class="nav-link" :class="{'active': isRouteActive('/rating')}">
                                                 რეიტინგი
-                                            </a>
+                                            </router-link>
                                         </li>
                                     </ul>
                                 </li>
@@ -117,6 +113,11 @@
                                 <li class="nav-item" :class="{'active': isRouteActive('/pay')}">
                                     <router-link to="/pay" class="nav-link" >
                                         გადახდა
+                                    </router-link>
+                                </li>
+                                <li class="nav-item" :class="{'active': isRouteActive('/rules')}">
+                                    <router-link to="/rules" class="nav-link" >
+                                        წესები
                                     </router-link>
                                 </li>
                             </ul>
