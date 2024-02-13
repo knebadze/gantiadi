@@ -7,7 +7,7 @@
                         <div class="row align-items-center">
                             <div class="col-lg-6">
                                 <div class="main-banner-content">
-                                    <span>Play, Learn and Grow</span>
+                                    <span>მიიღე მონაწილეობა, ისწავლე და განვითარდი</span>
                                     <h1>შესაბამის ტექსტი ოლიმპიადაზე</h1>
                                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis.</p>
 

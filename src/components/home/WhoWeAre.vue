@@ -7,7 +7,7 @@
                 <div class="col-lg-6">
                     <div class="who-we-are-content">
                         <span>ვინ ვართ ჩვენ</span>
-                        <h3>შესაბამისი ტექსტი</h3>
+                        <h3>ოლიმპიადა განთიადი</h3>
                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis.</p>
                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
 
@@ -29,9 +29,9 @@
                                 Play to Learn
                             </li>
                         </ul>
-                        <div class="who-we-are-btn">
+                        <!-- <div class="who-we-are-btn">
                             <a href="#" class="default-btn">მეტის ნახვა</a>
-                        </div>
+                        </div> -->
                     </div>
                 </div>
 
