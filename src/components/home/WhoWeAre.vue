@@ -1,4 +1,10 @@
 <script setup>
+import { ref } from 'vue';
+    const type = ref([
+        'გუნდური',
+        'ინდივიდუალური',
+        'პირველკლასელთა'
+    ])
 </script>
 <template>
     <section class="who-we-are ptb-100">
@@ -8,15 +14,18 @@
                     <div class="who-we-are-content">
                         <span>ვინ ვართ ჩვენ</span>
                         <h3>ოლიმპიადა განთიადი</h3>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis.</p>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                        <p>სასკოლო ოლიმპიადა <q>განთიადი</q> არის ორგანიზაცია, რომელიც ხელს უწყობს განათლების განვითარებას, წახალისებას. 
+                            ჩვენთან თითოეული გამარჯვებული მონაწილე ჯილდოვდება შესაბამისი პრიზით და სერტიფიკატით. 
+                            ოლიმპიადის ტესტებზე მუშაობენ კომპეტენტური მასწავლებლები და ფსიქოლოგები, რათა დავალებები ზუსტად შეესაბამებოდეს ბავშვების ცოდნის დონეს.
+                             <q>განთიადი</q> მოსწავლეებს სთავაზობს რამდენიმე სახის ოლიმპიადას:</p>
+                        <!-- <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p> -->
 
                         <ul class="who-we-are-list">
-                            <li>
-                                <span>1</span>
-                                Homelike Environment
+                            <li v-for="(item, index) in type" :key="index">
+                                <span>{{ index+1 }}</span>
+                                {{ item }} ოლიმპიადა
                             </li>
-                            <li>
+                            <!-- <li>
                                 <span>2</span>
                                 Quality Educators
                             </li>
@@ -27,7 +36,7 @@
                             <li>
                                 <span>4</span>
                                 Play to Learn
-                            </li>
+                            </li> -->
                         </ul>
                         <!-- <div class="who-we-are-btn">
                             <a href="#" class="default-btn">მეტის ნახვა</a>

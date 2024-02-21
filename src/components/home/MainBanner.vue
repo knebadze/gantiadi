@@ -7,9 +7,9 @@
                         <div class="row align-items-center">
                             <div class="col-lg-6">
                                 <div class="main-banner-content">
-                                    <span>მიიღე მონაწილეობა, ისწავლე და განვითარდი</span>
-                                    <h1>შესაბამის ტექსტი ოლიმპიადაზე</h1>
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis.</p>
+                                    <span>ვართ ერთად, ვაღწევთ წარმატებას!</span>
+                                    <h1>ოლიმპიადა განთიადი</h1>
+                                    <!-- <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis.</p> -->
 
                                     <div class="banner-btn">
                                         <router-link to="/events" class="default-btn">
